@@ -36,10 +36,14 @@ body {
   margin: auto;
 }
 
+.tooltip-main-container{
+  position: relative;
+}
+
 .tooltip-main-container button{
   cursor: pointer;
-  width: 10rem;
-  height: 3.5rem;
+  width: 12rem;
+  height: 4rem;
   background-color: blue;
   border-radius: 20px;
   color: white;
@@ -53,6 +57,40 @@ body {
   outline: none;
 }
 
-.tooltip-main-container button:hover{
+.tooltip-main-container button:hover {
   background-color: darkblue;
+}
+
+.tooltip-main-container .tooltip-text{
+  /* display: none; */
+  position: absolute;
+  width: 8rem;
+  height: 3rem;
+  background-color: black;
+  color: white;
+  border-radius: 10px 0px 10px 10px;
+}
+
+.bottom{
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.top{
+  margin-top: -120px;
+  margin-left: 30px;
+}
+
+.left{
+  margin-top: -55px;
+  margin-left: -140px;
+}
+
+.right{
+  margin-top: -55px;
+  margin-left: 200px;
+}
+
+button:hover ~ .tooltip-text{
+  display: block;
 }

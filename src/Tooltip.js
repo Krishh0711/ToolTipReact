@@ -29,6 +29,11 @@ class Tooltip extends React.Component{
             </div>
             <div className="tooltip-main-container">
                <button>Hover Over Me</button>
+               <div className="tooltip-text bottom">
+                <p>
+                    Hello There!
+                </p>
+               </div>
             </div>
             
          </div>
