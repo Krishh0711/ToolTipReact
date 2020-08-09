@@ -61,36 +61,70 @@ body {
   background-color: darkblue;
 }
 
-.tooltip-main-container .tooltip-text{
-  /* display: none; */
+.bottom{
+  display: none;
   position: absolute;
   width: 8rem;
   height: 3rem;
   background-color: black;
   color: white;
   border-radius: 10px 0px 10px 10px;
-}
-
-.bottom{
   margin-top: 10px;
   margin-left: 30px;
 }
 
+.displayNoneClass{
+  display: none;
+}
+
 .top{
+  display: none;
+  position: absolute;
+  width: 8rem;
+  height: 3rem;
+  background-color: black;
+  color: white;
+  border-radius: 10px 0px 10px 10px;
   margin-top: -120px;
   margin-left: 30px;
 }
 
 .left{
+  display: none;
+  position: absolute;
+  width: 8rem;
+  height: 3rem;
+  background-color: black;
+  color: white;
+  border-radius: 10px 0px 10px 10px;
   margin-top: -55px;
   margin-left: -140px;
 }
 
 .right{
+  display: none;
+  position: absolute;
+  width: 8rem;
+  height: 3rem;
+  background-color: black;
+  color: white;
+  border-radius: 10px 0px 10px 10px;
   margin-top: -55px;
   margin-left: 200px;
 }
 
-button:hover ~ .tooltip-text{
+button:hover ~ .left{
+  display: block;
+}
+
+button:hover ~ .right{
+  display: block;
+}
+
+button:hover ~ .top{
+  display: block;
+}
+
+button:hover ~ .bottom{
   display: block;
 }
