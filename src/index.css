@@ -5,9 +5,54 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: aquamarine;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.tooltip-container{
+  margin: auto;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.tooltip-container .input-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.tooltip-container .input-container input{
+  cursor: pointer;
+}
+
+.tooltip-container .input-container label{
+  cursor: pointer;
+}
+
+.tooltip-container .tooltip-main-container{
+  margin: auto;
+}
+
+.tooltip-main-container button{
+  cursor: pointer;
+  width: 10rem;
+  height: 3.5rem;
+  background-color: blue;
+  border-radius: 20px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: .4s ease-in-out;
+  text-align: center;
+}
+
+.tooltip-main-container button:focus{
+  outline: none;
+}
+
+.tooltip-main-container button:hover{
+  background-color: darkblue;
 }
