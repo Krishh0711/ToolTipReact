@@ -10,7 +10,7 @@ class Tooltip extends React.Component{
             position: "displayNoneClass"
         }
     }
-
+    //change state on selecting any position
     setPositionLeft = () => {
         this.setState({
           position : "left"
@@ -38,21 +38,25 @@ class Tooltip extends React.Component{
     render(){
         return(
          <div className="tooltip-container">
+            {/* Title  */}
             <div className="title-design">
                 <h1>Select the position of tooltip text</h1>
             </div>
             
+            {/* Input Component to select position */}
             <InputComp
             setPositionLeft={this.setPositionLeft}
             setPositionRight={this.setPositionRight}
             setPositionTop={this.setPositionTop}
             setPositionBottom={this.setPositionBottom}
             />
-
+            
+            {/* button and tooltip design */}
             <div className="tooltip-main-container">
                <button>Hover Over Me</button>
                <div className= {this.state.position}>
                 <p>
+                    {/* Toop tip text here */}
                     Hello There!
                 </p>
                </div>
